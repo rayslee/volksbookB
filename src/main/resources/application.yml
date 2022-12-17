@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: library
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://simwor.com:3306/volksbook?useUnicode=true&characterEncoding=utf8
+    username: rayslee
+    password: Libo0614..
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+      ddl-auto: update
+server:
+  port: 9000
